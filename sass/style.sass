@@ -1,0 +1,121 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+body
+    font-family: "Roboto", sans-serif
+    font-weight: 400
+    color: #777777
+    font-size: 16px
+    letter-spacing: 2px
+    padding: 0px 50px 50px 50px
+    background-color: white
+.container
+    background-color: #f7f7f7
+    width: 100%
+.header
+    position: relative
+    height: 100vh 
+    margin: 50px 0px 0px 0px
+    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center / cover no-repeat
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%)
+    &__logo
+        position: absolute
+        height: 70px
+        width: 56px
+        left: 50px
+        top: 50px
+        animation-name: baloonUp
+        animation-duration: 3s
+        animation-delay: .3s
+        animation-timing-function: ease
+    &__box
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        text-align: center
+.title-first
+    color: white
+    &__main
+        display: block
+        font-weight: 800
+        font-size: 50px
+        color: white
+        line-height: 60px
+        letter-spacing: 10px
+        text-transform: uppercase
+        animation-name: titleFirst
+        animation-duration: 1s
+        animation-delay: .3s
+        animation-timing-function: ease
+        margin-bottom: 10px
+    &__second
+        display: block
+        font-weight: 200
+        letter-spacing: 5px
+        font-size: 40px
+        line-height: 48px
+        margin-bottom: 40px
+        animation-name: titleSecond
+        animation-duration: 1s
+        animation-delay: .3s
+        animation-timing-function: ease
+
+.btn
+    &:link, &:visited
+        text-transform: uppercase
+        text-decoration: none
+        color: #777777
+        padding: 15px 40px
+        border-radius: 50px
+        background-color: #FFFFFF
+        display: inline-block
+        font-size: 20px
+        font-weight: 500
+        transition: .1s
+        animation-name: btnHeaderRevers
+        animation-duration: 1s
+        animation-timing-function: ease
+        animation-play-state: running
+    &:hover
+        transform: translateY(-3px)
+        transition: .1s
+        animation-name: btnHeader
+        animation-duration: 1s
+        animation-timing-function: ease
+        animation-play-state: running
+        animation-fill-mode: forwards
+    &:active
+        transform: translateY(-1px)
+
+@keyframes baloonUp
+    0%
+        transform: translateY(300px)
+    100%
+       transform: translateY(0px)
+@keyframes titleFirst
+    0%
+        transform: translateX(50px)
+        opacity: 0
+    100%
+       transform: translateY(0px)
+       opacity: 1
+@keyframes titleSecond
+    0%
+        transform: translateX(-50px)
+        opacity: 0
+    100%
+       transform: translateY(0px)
+       opacity: 1
+@keyframes btnHeader
+    0%
+        background-color: white
+    100%
+       background-color: rgba(181, 130, 63, 0.747)
+       color: #FFFFFF
+@keyframes btnHeaderRevers
+    0%
+    100%
+       background-color: white
