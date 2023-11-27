@@ -1,16 +1,20 @@
-* {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #777777;
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding: 0px 50px 50px 50px;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  padding: 5rem;
   background-color: white;
 }
 
@@ -22,17 +26,16 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  margin: 50px 0px 0px 0px;
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
           clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
 }
 .header__logo {
   position: absolute;
-  height: 70px;
-  width: 56px;
-  left: 50px;
-  top: 50px;
+  height: 7rem;
+  width: 5.6rem;
+  left: 5rem;
+  top: 5rem;
   animation-name: baloonUp;
   animation-duration: 3s;
   animation-delay: 0.3s;
@@ -41,14 +44,14 @@ body {
   z-index: 1;
 }
 .header__logo__point {
-  height: 5px;
-  width: 5px;
-  border-radius: 15px;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 1.5rem;
   background-color: #ffc32c;
   position: absolute;
-  padding: 10px;
-  top: 370px;
-  left: 68px;
+  padding: 1rem;
+  top: 37rem;
+  left: 6.8rem;
   animation-name: baloonUpPoint;
   animation-duration: 3s;
   animation-delay: 0.3s;
@@ -70,25 +73,25 @@ body {
 .title-first__main {
   display: block;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 5rem;
   color: white;
-  line-height: 60px;
-  letter-spacing: 10px;
+  line-height: 6rem;
+  letter-spacing: 1rem;
   text-transform: uppercase;
   animation-name: titleFirst;
   animation-duration: 1s;
   animation-delay: 0.1s;
   animation-timing-function: ease;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   animation-fill-mode: backwards;
 }
 .title-first__second {
   display: block;
   font-weight: 200;
-  letter-spacing: 5px;
-  font-size: 40px;
-  line-height: 48px;
-  margin-bottom: 40px;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  margin-bottom: 4rem;
   animation-name: titleSecond;
   animation-duration: 1s;
   animation-delay: 0.1s;
@@ -103,11 +106,11 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
-  padding: 15px 40px;
+  padding: 1.5rem 4rem;
   border-radius: 50px;
   background-color: #FFFFFF;
   display: inline-block;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
   transition: 0.1s;
   transition: 0.5s;
@@ -131,7 +134,7 @@ body {
   background-color: #FFFFFF;
   width: 100%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 5rem;
   display: inline-block;
   position: absolute;
   top: 0;
@@ -146,7 +149,7 @@ body {
 
 @keyframes baloonUp {
   0% {
-    transform: translateY(300px);
+    transform: translateY(30rem);
   }
   100% {
     transform: translateY(0px);
@@ -157,12 +160,12 @@ body {
     transform: translateY(0px) scale(1);
   }
   100% {
-    transform: translateY(-300px) scale(0);
+    transform: translateY(-30rem) scale(0);
   }
 }
 @keyframes titleFirst {
   0% {
-    transform: translateX(50px);
+    transform: translateX(5rem);
     opacity: 0;
   }
   100% {
@@ -172,7 +175,7 @@ body {
 }
 @keyframes titleSecond {
   0% {
-    transform: translateX(-50px);
+    transform: translateX(-5rem);
     opacity: 0;
   }
   100% {
@@ -182,7 +185,7 @@ body {
 }
 @keyframes btnStart {
   0% {
-    transform: translateY(20px);
+    transform: translateY(2rem);
     opacity: 0;
   }
   100% {
