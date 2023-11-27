@@ -79,14 +79,12 @@ body
         animation-duration: 1s
         animation-timing-function: ease
         animation-play-state: running
+        transition: .5s
     &:hover
         transform: translateY(-3px)
         transition: .1s
-        animation-name: btnHeader
-        animation-duration: 1s
-        animation-timing-function: ease
-        animation-play-state: running
-        animation-fill-mode: forwards
+        background-color: rgba(181, 130, 63, 0.747)
+       color: #FFFFFF
     &:active
         transform: translateY(-1px)
 
@@ -109,13 +107,3 @@ body
     100%
        transform: translateY(0px)
        opacity: 1
-@keyframes btnHeader
-    0%
-        background-color: white
-    100%
-       background-color: rgba(181, 130, 63, 0.747)
-       color: #FFFFFF
-@keyframes btnHeaderRevers
-    0%
-    100%
-       background-color: white

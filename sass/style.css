@@ -92,6 +92,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-play-state: running;
+  transition: 0.5s;
 }
 .btn:hover {
   transform: translateY(-3px);
