@@ -29,6 +29,7 @@ body
         animation-duration: 3s
         animation-delay: .3s
         animation-timing-function: ease
+        animation-fill-mode: backwards
     &__box
         position: absolute
         top: 50%
@@ -48,9 +49,10 @@ body
         text-transform: uppercase
         animation-name: titleFirst
         animation-duration: 1s
-        animation-delay: .3s
+        animation-delay: .1s
         animation-timing-function: ease
         margin-bottom: 10px
+        animation-fill-mode: backwards
     &__second
         display: block
         font-weight: 200
@@ -60,10 +62,12 @@ body
         margin-bottom: 40px
         animation-name: titleSecond
         animation-duration: 1s
-        animation-delay: .3s
+        animation-delay: .1s
         animation-timing-function: ease
+        animation-fill-mode: backwards
 
 .btn
+    position: relative
     &:link, &:visited
         text-transform: uppercase
         text-decoration: none
@@ -75,19 +79,34 @@ body
         font-size: 20px
         font-weight: 500
         transition: .1s
-        animation-name: btnHeaderRevers
-        animation-duration: 1s
-        animation-timing-function: ease
-        animation-play-state: running
         transition: .5s
     &:hover
         transform: translateY(-3px)
         transition: .1s
         background-color: rgba(181, 130, 63, 0.747)
-       color: #FFFFFF
+        color: #FFFFFF
+        &::after
+            transform: scaleX(0) scaleY(0)
+            opacity: 0
+            transition: .5s
+            
     &:active
         transform: translateY(-1px)
-
+    &::after
+        content: ""
+        background-color: #FFFFFF
+        width: 100%
+        height: 100%
+        border-radius: 50px
+        display: inline-block
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -10
+        transition: .5s
+    &_animated
+        animation: btnStart 1s ease .3s
+        animation-fill-mode: backwards
 @keyframes baloonUp
     0%
         transform: translateY(300px)
@@ -103,6 +122,13 @@ body
 @keyframes titleSecond
     0%
         transform: translateX(-50px)
+        opacity: 0
+    100%
+       transform: translateX(0px)
+       opacity: 1
+@keyframes btnStart
+    0%
+        transform: translateY(20px)
         opacity: 0
     100%
        transform: translateY(0px)

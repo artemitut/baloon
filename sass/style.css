@@ -37,6 +37,7 @@ body {
   animation-duration: 3s;
   animation-delay: 0.3s;
   animation-timing-function: ease;
+  animation-fill-mode: backwards;
 }
 .header__box {
   position: absolute;
@@ -60,9 +61,10 @@ body {
   text-transform: uppercase;
   animation-name: titleFirst;
   animation-duration: 1s;
-  animation-delay: 0.3s;
+  animation-delay: 0.1s;
   animation-timing-function: ease;
   margin-bottom: 10px;
+  animation-fill-mode: backwards;
 }
 .title-first__second {
   display: block;
@@ -73,10 +75,14 @@ body {
   margin-bottom: 40px;
   animation-name: titleSecond;
   animation-duration: 1s;
-  animation-delay: 0.3s;
+  animation-delay: 0.1s;
   animation-timing-function: ease;
+  animation-fill-mode: backwards;
 }
 
+.btn {
+  position: relative;
+}
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -88,23 +94,38 @@ body {
   font-size: 20px;
   font-weight: 500;
   transition: 0.1s;
-  animation-name: btnHeaderRevers;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-play-state: running;
   transition: 0.5s;
 }
 .btn:hover {
   transform: translateY(-3px);
   transition: 0.1s;
-  animation-name: btnHeader;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-play-state: running;
-  animation-fill-mode: forwards;
+  background-color: rgba(181, 130, 63, 0.747);
+  color: #FFFFFF;
+}
+.btn:hover::after {
+  transform: scaleX(0) scaleY(0);
+  opacity: 0;
+  transition: 0.5s;
 }
 .btn:active {
   transform: translateY(-1px);
+}
+.btn::after {
+  content: "";
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  transition: 0.5s;
+}
+.btn_animated {
+  animation: btnStart 1s ease 0.3s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes baloonUp {
@@ -131,21 +152,17 @@ body {
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
+    transform: translateX(0px);
     opacity: 1;
   }
 }
-@keyframes btnHeader {
+@keyframes btnStart {
   0% {
-    background-color: white;
+    transform: translateY(20px);
+    opacity: 0;
   }
   100% {
-    background-color: rgba(181, 130, 63, 0.747);
-    color: #FFFFFF;
-  }
-}
-@keyframes btnHeaderRevers {
-  100% {
-    background-color: white;
+    transform: translateY(0px);
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
