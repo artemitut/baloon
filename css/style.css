@@ -37,26 +37,11 @@ body {
   left: 5rem;
   top: 5rem;
   animation-name: baloonUp;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-delay: 0.3s;
   animation-timing-function: ease;
   animation-fill-mode: backwards;
   z-index: 1;
-}
-.header__logo__point {
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 1.5rem;
-  background-color: #ffc32c;
-  position: absolute;
-  padding: 1rem;
-  top: 37rem;
-  left: 6.8rem;
-  animation-name: baloonUpPoint;
-  animation-duration: 3s;
-  animation-delay: 0.3s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
 }
 .header__box {
   position: absolute;
@@ -109,7 +94,7 @@ body {
   display: inline-block;
   padding: 1.5rem 4rem;
   border-radius: 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 2rem;
   font-weight: 500;
   transition: 0.1s;
