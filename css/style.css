@@ -110,6 +110,11 @@ body {
   font-size: 3.6rem;
   letter-spacing: 1rem;
   font-weight: 700;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.4s;
+  backface-visibility: hidden;
 }
 
 .title-third {
