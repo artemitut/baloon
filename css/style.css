@@ -130,6 +130,18 @@ body {
   text-align: center;
 }
 
+.margin-bottom-10px {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-20px {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 3rem;
+}
+
 .margin-bottom-80px {
   margin-bottom: 8rem;
 }
@@ -190,9 +202,10 @@ body {
   text-decoration: none;
   color: #777777;
   display: inline-block;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   background-color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
   font-weight: 500;
   transition: 0.5s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -214,13 +227,25 @@ body {
   background-image: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(161, 79, 3, 0.7) 99.94%);
   width: 100%;
   height: 100%;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 0.5s;
+}
+.btn_left-to-right_sqrl:link, .btn_left-to-right_sqrl:visited {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.btn_left-to-right_sqrl::after {
+  -webkit-clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
+}
+.btn_left-to-right_sqrl:hover::after {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .btn_bottom-to-top {
@@ -231,9 +256,10 @@ body {
   text-decoration: none;
   color: #777777;
   display: inline-block;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   background-color: #ffffff;
-  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   transition: 0.5s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -248,20 +274,67 @@ body {
           clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
 }
 .btn_bottom-to-top::after {
-  content: "Дізнатись більше →";
   color: #ffffff;
   -webkit-clip-path: polygon(100% 100%, 0 100%, 0 96%, 100% 96%);
           clip-path: polygon(100% 100%, 0 100%, 0 96%, 100% 96%);
+  content: "Дізнатись більше →";
   background-color: rgba(181, 130, 63, 0.747);
   width: 100%;
   height: 100%;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 0.5s;
+}
+.btn_bottom-to-top_sqrl:link, .btn_bottom-to-top_sqrl:visited {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.btn_bottom-to-top_sqrl::after {
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 95%, 100% 95%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 95%, 100% 95%);
+}
+.btn_bottom-to-top_sqrl:hover::after {
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 65%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.4s;
+  outline-offset: 1rem;
+}
+.composition__photo_n1 {
+  top: 0%;
+  left: 0%;
+}
+.composition__photo_n2 {
+  top: 4rem;
+  right: 0%;
+  z-index: 2;
+}
+.composition__photo_n3 {
+  top: 14rem;
+  left: 10%;
+}
+.composition__photo:hover {
+  z-index: 10;
+  transform: scale(1.1);
+  transition: 0.4s;
+  outline: 1rem solid #BA8554;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.96);
 }
 
 .header {
