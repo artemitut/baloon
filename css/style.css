@@ -414,4 +414,8 @@ body {
 }
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+
+.section-about {
+  padding: 0rem 5rem;
 }/*# sourceMappingURL=style.css.map */
