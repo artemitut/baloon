@@ -15,4 +15,7 @@
   body {
     padding: 0;
   }
+  .section-about {
+    padding: 5rem;
+  }
 }
