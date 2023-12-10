@@ -159,11 +159,6 @@ body {
   margin-bottom: 8rem;
 }
 
-.margin-0-auto {
-  display: block;
-  margin: 0 auto;
-}
-
 .btn {
   position: relative;
 }
