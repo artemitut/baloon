@@ -161,8 +161,6 @@ body {
 
 .btn {
   position: relative;
-}
-.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
