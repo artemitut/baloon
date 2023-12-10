@@ -564,9 +564,9 @@ body {
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/section-adventure.jpg) center/cover no-repeat;
   -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
           clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
-  margin-bottom: 6rem;
 }
 
 .section-tour {
+  padding-top: 6rem;
   height: 100%;
 }/*# sourceMappingURL=style.css.map */
