@@ -45,9 +45,7 @@
     opacity: 1;
   }
 }
-*,
-::after,
-::before {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -112,11 +110,7 @@ body {
   font-size: 3.6rem;
   letter-spacing: 1rem;
   font-weight: 700;
-  background: linear-gradient(
-    90deg,
-    rgba(186, 133, 84, 0.7) 0.03%,
-    rgba(161, 79, 3, 0.7) 99.94%
-  );
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
   -webkit-background-clip: text;
   color: transparent;
   transition: all 0.4s;
@@ -179,12 +173,13 @@ body {
   transition: 0.1s;
   transition: 0.5s;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  cursor: pointer;
 }
 .btn:hover {
   transform: translateY(-3px);
   transition: 0.1s;
   background-color: rgba(181, 130, 63, 0.747);
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .btn:hover::after {
   transform: scaleX(0) scaleY(0);
@@ -196,7 +191,7 @@ body {
 }
 .btn::after {
   content: "";
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   width: 100%;
   height: 100%;
   border-radius: 5rem;
@@ -215,8 +210,7 @@ body {
 .btn_left-to-right {
   position: relative;
 }
-.btn_left-to-right:link,
-.btn_left-to-right:visited {
+.btn_left-to-right:link, .btn_left-to-right:visited {
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
@@ -228,7 +222,7 @@ body {
   font-weight: 500;
   transition: 0.5s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 .btn_left-to-right:hover {
   transition: 0.1s;
@@ -236,18 +230,14 @@ body {
 .btn_left-to-right:hover::after {
   transition: 0.5s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 .btn_left-to-right::after {
   content: "Дізнатись більше →";
   color: #ffffff;
   -webkit-clip-path: polygon(10% 0%, 11% 0, 1% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 11% 0, 1% 100%, 0% 100%);
-  background-image: linear-gradient(
-    90deg,
-    rgba(186, 133, 84, 0.7),
-    rgba(161, 79, 3, 0.7) 99.94%
-  );
+          clip-path: polygon(10% 0%, 11% 0, 1% 100%, 0% 100%);
+  background-image: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(161, 79, 3, 0.7) 99.94%);
   width: 100%;
   height: 100%;
   padding: 1.5rem 2rem;
@@ -258,25 +248,23 @@ body {
   z-index: 1;
   transition: 0.5s;
 }
-.btn_left-to-right_sqrl:link,
-.btn_left-to-right_sqrl:visited {
+.btn_left-to-right_sqrl:link, .btn_left-to-right_sqrl:visited {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .btn_left-to-right_sqrl::after {
   -webkit-clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
 }
 .btn_left-to-right_sqrl:hover::after {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .btn_bottom-to-top {
   position: relative;
 }
-.btn_bottom-to-top:link,
-.btn_bottom-to-top:visited {
+.btn_bottom-to-top:link, .btn_bottom-to-top:visited {
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
@@ -288,7 +276,7 @@ body {
   font-weight: 500;
   transition: 0.5s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 .btn_bottom-to-top:hover {
   transition: 0.1s;
@@ -296,12 +284,12 @@ body {
 .btn_bottom-to-top:hover::after {
   transition: 0.5s;
   -webkit-clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
-  clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+          clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
 }
 .btn_bottom-to-top::after {
   color: #ffffff;
   -webkit-clip-path: polygon(100% 100%, 0 100%, 0 96%, 100% 96%);
-  clip-path: polygon(100% 100%, 0 100%, 0 96%, 100% 96%);
+          clip-path: polygon(100% 100%, 0 100%, 0 96%, 100% 96%);
   content: "Дізнатись більше →";
   background-color: rgba(181, 130, 63, 0.747);
   width: 100%;
@@ -314,18 +302,17 @@ body {
   z-index: 1;
   transition: 0.5s;
 }
-.btn_bottom-to-top_sqrl:link,
-.btn_bottom-to-top_sqrl:visited {
+.btn_bottom-to-top_sqrl:link, .btn_bottom-to-top_sqrl:visited {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .btn_bottom-to-top_sqrl::after {
   -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 95%, 100% 95%);
-  clip-path: polygon(100% 100%, 0% 100%, 0% 95%, 100% 95%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 95%, 100% 95%);
 }
 .btn_bottom-to-top_sqrl:hover::after {
   -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
-  clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
 }
 
 .composition {
@@ -357,7 +344,7 @@ body {
   z-index: 10;
   transform: scale(1.1);
   transition: 0.4s;
-  outline: 1rem solid #ba8554;
+  outline: 1rem solid #BA8554;
 }
 .composition:hover .composition__photo:not(:hover) {
   transform: scale(0.96);
@@ -376,11 +363,7 @@ body {
 }
 .travel-card__icon {
   font-size: 6rem;
-  background: linear-gradient(
-    90deg,
-    rgba(186, 133, 84, 0.7) 0.03%,
-    rgba(161, 79, 3, 0.7) 99.94%
-  );
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
@@ -409,7 +392,7 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .tour-card__side_back {
-  background: linear-gradient(120deg, #ba8554 0.03%, #a14f03 99.94%);
+  background: linear-gradient(120deg, #BA8554 0.03%, #A14F03 99.94%);
   transform: rotateY(180deg);
   border-radius: 0.3rem;
 }
@@ -424,17 +407,17 @@ body {
   width: 100%;
   height: 20rem;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   border-radius: 0.3rem;
 }
 .tour-card__img_1 {
-  background: #ba8554 url(../img/card-1.jpg) center/cover no-repeat;
+  background: #BA8554 url(../img/card-1.jpg) center/cover no-repeat;
 }
 .tour-card__img_2 {
-  background: #ba8554 url(../img/card-2.jpg) center/cover no-repeat;
+  background: #BA8554 url(../img/card-2.jpg) center/cover no-repeat;
 }
 .tour-card__img_3 {
-  background: #ba8554 url(../img/card-3.jpg) center/cover no-repeat;
+  background: #BA8554 url(../img/card-3.jpg) center/cover no-repeat;
 }
 .tour-card__title {
   width: 100%;
@@ -449,7 +432,7 @@ body {
   right: 0rem;
 }
 .tour-card__span {
-  background: linear-gradient(90deg, #ba8554 0.03%, #a14f03 99.94%);
+  background: linear-gradient(90deg, #BA8554 0.03%, #A14F03 99.94%);
 }
 .tour-card__span_1 {
   padding: 1rem 2rem 0rem 2rem;
@@ -499,14 +482,9 @@ body {
 .header {
   position: relative;
   height: 100vh;
-  background: linear-gradient(
-      90deg,
-      rgba(186, 133, 84, 0.7) 0.03%,
-      rgba(0, 0, 0, 0.7) 99.94%
-    ),
-    url(../img/header-background.jpg) center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header-background.jpg) center/cover no-repeat;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
   margin-bottom: 6rem;
 }
 .header__logo {
@@ -568,10 +546,10 @@ body {
   width: calc(3 * (100% - 3 * 6rem) / 4 + 2 * 6rem);
 }
 
-[class^="col-"] {
+[class^=col-] {
   float: left;
 }
-[class^="col-"]:not(:last-child) {
+[class^=col-]:not(:last-child) {
   margin-right: 6rem;
 }
 
@@ -582,17 +560,12 @@ body {
 
 .section-travel {
   padding: 21.5rem 0rem;
-  background: linear-gradient(
-      90deg,
-      rgba(186, 133, 84, 0.7) 0.03%,
-      rgba(0, 0, 0, 0.7) 99.94%
-    ),
-    url(../img/section-adventure.jpg) center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/section-adventure.jpg) center/cover no-repeat;
   -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
-  clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+          clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
 }
 
 .section-tour {
   padding-top: 6rem;
   height: 100%;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
