@@ -1,15 +1,14 @@
 .btn
     position: relative
-    &:link, &:visited
-        @include style-link($color-gray)
-        padding: 1.5rem 4rem
-        border-radius: 50px
-        background-color: #ffffff
-        font-size: 2rem
-        font-weight: 500
-        transition: .1s
-        transition: .5s
-        box-shadow: $box-shadow
+    @include style-link($color-gray)
+    padding: 1.5rem 4rem
+    border-radius: 50px
+    background-color: #ffffff
+    font-size: 2rem
+    font-weight: 500
+    transition: .1s
+    transition: .5s
+    box-shadow: $box-shadow
     &:hover
         transform: translateY(-3px)
         transition: .1s
