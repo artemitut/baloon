@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/icon-font.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media.css" />
     <link rel="icon" href="./icons/Icon-logo.svg" />
@@ -27,35 +28,315 @@
           <h1 class="title-first">
             <span class="title-first__main">ТУРИ НА ПОВІТРЯНІЙ КУЛІ</span>
             <span class="title-first__second">незабутня пригода чекає вас</span>
-            <a href="#" class="btn btn_animated">наш каталог</a>
+            <div class="btn btn_animated btnKatalog" id="btnKatalog">
+              наш каталог
+            </div>
           </h1>
         </div>
       </div>
       <div class="main">
-        <div class="section-about">
+        <section class="section-about">
           <div class="text-align-center margin-bottom-80px">
             <h2 class="title-secondary">неймовірні враження свободи</h2>
           </div>
           <div class="row">
             <div class="col-1-of-2">
-              <h3 class="title-third">ДОЗВОЛЬ СОБІ ПРИГОДИ</h3>
-              <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-                dicta cumque minima, et atque quo sint dolore, non eius
+              <h3 class="title-third margin-bottom-10px">
+                ДОЗВОЛЬ СОБІ ПРИГОДИ
+              </h3>
+              <p class="paragraph margin-bottom-30px">
+                Завдання організації, особливо ж розвиток різних форм діяльності
+                тягне у себе процес впровадженням і модернізації відповідних
+                умов активизации. Таким чином, початок повсякденної роботи з
+                формування позиції тягне.
               </p>
 
-              <h3 class="title-third">ДОЗВОЛЬ СОБІ ПРИГОДИ</h3>
-              <p class="paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-                dicta cumque minima, et atque quo sint dolore, non eius
+              <h3 class="title-third margin-bottom-10px">
+                ВВЕРХ НА 6000 МЕТРІВ НАД РІВНЕМ МОРЯ
+              </h3>
+              <p class="paragraph margin-bottom-30px">
+                Завдання організації, особливо ж розвиток різних форм діяльності
+                тягне у себе процес впровадження та модернізації відповідних
+                умов активізації. Таким чином, початок повсякденної роботи з
+                формування позиції тягне.
               </p>
+              <a href="#" class="btn_bottom-to-top btn_bottom-to-top_sqrl"
+                >Дізнатись більше →</a
+              >
             </div>
-            <div class="col-1-of-2">img</div>
+            <div class="col-1-of-2">
+              <div class="composition">
+                <img
+                  src="./img/photo-ballons-2.png"
+                  alt="photo-ballons-1"
+                  class="composition__photo composition__photo_n1"
+                />
+                <img
+                  src="./img/photo-ballons-1.png "
+                  alt="photo-ballons-2"
+                  class="composition__photo composition__photo_n2"
+                />
+                <img
+                  src="./img/photo-ballons-3.png "
+                  alt="photo-ballons-3"
+                  class="composition__photo composition__photo_n3"
+                />
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+        <section class="section-travel">
+          <div class="row">
+            <div class="col-1-of-4">
+              <div class="travel-card text-align-center">
+                <i
+                  class="travel-card__icon icon-Vector-3 margin-bottom-20px"
+                ></i>
+                <h3 class="title-third margin-bottom-10px">пригоди</h3>
+                <p class="paragraph">
+                  Завдання організації, особливо ж розвиток різних сторін
+                  туризму
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="travel-card text-align-center">
+                <i
+                  class="travel-card__icon icon-Vector-2 margin-bottom-20px"
+                ></i>
+                <h3 class="title-third margin-bottom-10px">пригоди</h3>
+                <p class="paragraph">
+                  Завдання організації, особливо ж розвиток різних сторін
+                  туризму
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="travel-card text-align-center">
+                <i class="travel-card__icon icon-Vector margin-bottom-20px"></i>
+                <h3 class="title-third margin-bottom-10px">пригоди</h3>
+                <p class="paragraph">
+                  Завдання організації, особливо ж розвиток різних сторін
+                  туризму
+                </p>
+              </div>
+            </div>
+            <div class="col-1-of-4">
+              <div class="travel-card text-align-center">
+                <i
+                  class="travel-card__icon icon-Vector-1 margin-bottom-20px"
+                ></i>
+                <h3 class="title-third margin-bottom-10px">пригоди</h3>
+                <p class="paragraph">
+                  Завдання організації, особливо ж розвиток різних сторін
+                  туризму
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-tour" id="katalog">
+          <div class="text-align-center margin-bottom-80px">
+            <h2 class="title-secondary">НАЙБІЛЬШ ПОПУЛЯРНІ ТУРИ</h2>
+          </div>
+          <div class="row">
+            <div class="col-1-of-3">
+              <div class="tour-card">
+                <div class="tour-card__side tour-card__side_front">
+                  <div
+                    class="tour-card__img tour-card__img_1 margin-bottom-60px"
+                  ></div>
+                  <h4 class="tour-card__title">
+                    <span class="tour-card__span tour-card__span_1"
+                      >групові</span
+                    >
+                    <br />
+                    <span class="tour-card__span tour-card__span_2">тури</span>
+                  </h4>
+                  <div class="tour-card__text">
+                    <ul>
+                      <li>Групи від 6 осіб</li>
+                      <br />
+                      <li>Тривалість 2 год</li>
+                      <br />
+                      <li>У групі 1 гід</li>
+                      <br />
+                      <li>Дальність польоту 6км</li>
+                      <br />
+                      <li>Безкоштовні сувеніри</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tour-card__side tour-card__side_back">
+                  <div class="tour-card__backside-box">
+                    <p class="tour-card__back-text tour-card__back-text_1">
+                      повна вартість
+                    </p>
+                    <p class="tour-card__back-text tour-card__back-text_2">
+                      2990₴
+                    </p>
+                    <a href="#" class="btn btn_animated">забронювати</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="tour-card">
+                <div class="tour-card__side tour-card__side_front">
+                  <div
+                    class="tour-card__img tour-card__img_2 margin-bottom-60px"
+                  ></div>
+                  <h4 class="tour-card__title">
+                    <span class="tour-card__span tour-card__span_1"
+                      >приватні</span
+                    >
+                    <br />
+                    <span class="tour-card__span tour-card__span_2">тури</span>
+                  </h4>
+                  <div class="tour-card__text">
+                    <ul>
+                      <li>Групи від 6 осіб</li>
+                      <br />
+                      <li>Тривалість 2 год</li>
+                      <br />
+                      <li>У групі 1 гід</li>
+                      <br />
+                      <li>Дальність польоту 6км</li>
+                      <br />
+                      <li>Безкоштовні сувеніри</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tour-card__side tour-card__side_back">
+                  <div class="tour-card__backside-box">
+                    <p class="tour-card__back-text tour-card__back-text_1">
+                      повна вартість
+                    </p>
+                    <p class="tour-card__back-text tour-card__back-text_2">
+                      2990₴
+                    </p>
+                    <a href="#" class="btn btn_animated">забронювати</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-1-of-3">
+              <div class="tour-card">
+                <div class="tour-card__side tour-card__side_front">
+                  <div
+                    class="tour-card__img tour-card__img_3 margin-bottom-60px"
+                  ></div>
+                  <h4 class="tour-card__title">
+                    <span class="tour-card__span tour-card__span_1"
+                      >оглядові</span
+                    >
+                    <br />
+                    <span class="tour-card__span tour-card__span_2">тури</span>
+                  </h4>
+                  <div class="tour-card__text">
+                    <ul>
+                      <li>Групи від 6 осіб</li>
+                      <br />
+                      <li>Тривалість 2 год</li>
+                      <br />
+                      <li>У групі 1 гід</li>
+                      <br />
+                      <li>Дальність польоту 6км</li>
+                      <br />
+                      <li>Безкоштовні сувеніри</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tour-card__side tour-card__side_back">
+                  <div class="tour-card__backside-box">
+                    <p class="tour-card__back-text tour-card__back-text_1">
+                      повна вартість
+                    </p>
+                    <p class="tour-card__back-text tour-card__back-text_2">
+                      2990₴
+                    </p>
+                    <a href="#" class="btn btn_animated">забронювати</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-align-center">
+            <a href="#" class="btn btn_animated">забронювати</a>
+          </div>
+        </section>
       </div>
     </div>
-    <a href="" class="btn_left-to-right">Дізнатись більше →</a>
-    <a href="" class="btn_bottom-to-top">Дізнатись більше →</a>
   </body>
+  <script src="./js/index.js"></script>
 </html>
+
+<!--  <section class="grid-test">
+        <div class="row">
+            <div class="col-1-of-2">
+                col-1-of-2
+            </div>
+            <div class="col-1-of-2">
+                col-1-of-2
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-3">
+                col-1-of-3
+            </div>
+            <div class="col-2-of-3">
+                col-2-of-3
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-2-of-4">
+                col-2-of-4
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-4">
+                col-1-of-4
+            </div>
+            <div class="col-3-of-4">
+                col-3-of-4
+            </div>
+        </div>
+
+
+   </section> -->

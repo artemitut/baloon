@@ -15,4 +15,11 @@
   body {
     padding: 0;
   }
+  .section-about {
+    padding: 5rem;
+  }
+  .btn_bottom-to-top_sqrl {
+    width: 104%;
+    text-align: center;
+  }
 }

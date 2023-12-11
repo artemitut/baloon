@@ -110,6 +110,11 @@ body {
   font-size: 3.6rem;
   letter-spacing: 1rem;
   font-weight: 700;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.4s;
+  backface-visibility: hidden;
 }
 
 .title-third {
@@ -130,14 +135,32 @@ body {
   text-align: center;
 }
 
+.margin-bottom-10px {
+  margin-bottom: 1rem;
+}
+
+.margin-bottom-20px {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-30px {
+  margin-bottom: 3rem;
+}
+
+.margin-bottom-40px {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-60px {
+  margin-bottom: 6rem;
+}
+
 .margin-bottom-80px {
   margin-bottom: 8rem;
 }
 
 .btn {
   position: relative;
-}
-.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   color: #777777;
@@ -149,6 +172,8 @@ body {
   font-weight: 500;
   transition: 0.1s;
   transition: 0.5s;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  cursor: pointer;
 }
 .btn:hover {
   transform: translateY(-3px);
@@ -190,9 +215,10 @@ body {
   text-decoration: none;
   color: #777777;
   display: inline-block;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   background-color: #ffffff;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
   font-weight: 500;
   transition: 0.7s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -214,13 +240,25 @@ body {
   background-image: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(161, 79, 3, 0.7) 99.94%);
   width: 100%;
   height: 100%;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 0.7s;
+}
+.btn_left-to-right_sqrl:link, .btn_left-to-right_sqrl:visited {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.btn_left-to-right_sqrl::after {
+  -webkit-clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
+}
+.btn_left-to-right_sqrl:hover::after {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .btn_bottom-to-top {
@@ -231,9 +269,10 @@ body {
   text-decoration: none;
   color: #777777;
   display: inline-block;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   background-color: #ffffff;
-  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
   transition: 0.5s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
@@ -248,20 +287,196 @@ body {
           clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
 }
 .btn_bottom-to-top::after {
-  content: "Дізнатись більше →";
   color: #ffffff;
   -webkit-clip-path: polygon(100% 100%, 0 100%, 0 96%, 100% 96%);
           clip-path: polygon(100% 100%, 0 100%, 0 96%, 100% 96%);
+  content: "Дізнатись більше →";
   background-color: rgba(181, 130, 63, 0.747);
   width: 100%;
   height: 100%;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 2rem;
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   transition: 0.5s;
+}
+.btn_bottom-to-top_sqrl:link, .btn_bottom-to-top_sqrl:visited {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.btn_bottom-to-top_sqrl::after {
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 95%, 100% 95%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 95%, 100% 95%);
+}
+.btn_bottom-to-top_sqrl:hover::after {
+  -webkit-clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
+          clip-path: polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%);
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 65%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  transition: all 0.4s;
+  outline-offset: 1rem;
+}
+.composition__photo_n1 {
+  top: 0%;
+  left: 0%;
+}
+.composition__photo_n2 {
+  top: 4rem;
+  right: 0%;
+  z-index: 2;
+}
+.composition__photo_n3 {
+  top: 14rem;
+  left: 10%;
+}
+.composition__photo:hover {
+  z-index: 10;
+  transform: scale(1.1);
+  transition: 0.4s;
+  outline: 1rem solid #BA8554;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.96);
+}
+
+.travel-card {
+  padding: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: 0.3s;
+}
+.travel-card:hover {
+  transform: translateY(-0.7rem);
+  transition: 0.3s;
+}
+.travel-card__icon {
+  font-size: 6rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.tour-card {
+  height: 50rem;
+  transition: 1s;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  color: #ffffff;
+}
+.tour-card__side {
+  height: 50rem;
+  transition: 0.9s all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.tour-card__side_front {
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+}
+.tour-card__side_back {
+  background: linear-gradient(120deg, #BA8554 0.03%, #A14F03 99.94%);
+  transform: rotateY(180deg);
+  border-radius: 0.3rem;
+}
+.tour-card:hover .tour-card__side_front {
+  transform: rotateY(-180deg);
+}
+.tour-card:hover .tour-card__side_back {
+  transform: rotateY(0deg);
+}
+.tour-card__img {
+  background-blend-mode: hard-light;
+  width: 100%;
+  height: 20rem;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  border-radius: 0.3rem;
+}
+.tour-card__img_1 {
+  background: #BA8554 url(../img/card-1.jpg) center/cover no-repeat;
+}
+.tour-card__img_2 {
+  background: #BA8554 url(../img/card-2.jpg) center/cover no-repeat;
+}
+.tour-card__img_3 {
+  background: #BA8554 url(../img/card-3.jpg) center/cover no-repeat;
+}
+.tour-card__title {
+  width: 100%;
+  text-align: right;
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: 31%;
+  right: 0rem;
+}
+.tour-card__span {
+  background: linear-gradient(90deg, #BA8554 0.03%, #A14F03 99.94%);
+}
+.tour-card__span_1 {
+  padding: 1rem 2rem 0rem 2rem;
+}
+.tour-card__span_2 {
+  padding: 0rem 2rem 1rem 2rem;
+  position: absolute;
+  top: 3.2rem;
+  right: 0;
+}
+.tour-card__text ul {
+  list-style: none;
+  text-align: center;
+}
+.tour-card__text ul li {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  color: #777777;
+  display: inline-block;
+  border-bottom: 1px solid #777777;
+  text-align: center;
+}
+.tour-card__text ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.tour-card__backside-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tour-card__back-text {
+  margin-bottom: 8rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.tour-card__back-text_1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.tour-card__back-text_2 {
+  font-size: 6rem;
+  font-weight: 500;
 }
 
 .header {
@@ -336,4 +551,21 @@ body {
 }
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
+}
+
+.section-about {
+  padding: 0rem 5rem;
+  margin-bottom: 6rem;
+}
+
+.section-travel {
+  padding: 21.5rem 0rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/section-adventure.jpg) center/cover no-repeat;
+  -webkit-clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+          clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+}
+
+.section-tour {
+  padding-top: 6rem;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
