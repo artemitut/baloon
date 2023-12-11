@@ -194,23 +194,23 @@ body {
   background-color: #ffffff;
   font-size: 2rem;
   font-weight: 500;
-  transition: 0.5s;
+  transition: 0.7s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
           clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 .btn_left-to-right:hover {
-  transition: 0.1s;
+  transition: 0.7s;
 }
 .btn_left-to-right:hover::after {
-  transition: 0.5s;
+  transition: 0.7s;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
           clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 .btn_left-to-right::after {
   content: "Дізнатись більше →";
   color: #ffffff;
-  -webkit-clip-path: polygon(10% 0%, 11% 0, 1% 100%, 0% 100%);
-          clip-path: polygon(10% 0%, 11% 0, 1% 100%, 0% 100%);
+  -webkit-clip-path: polygon(10% 0%, 11.2% 0, 1.2% 100%, 0% 100%);
+          clip-path: polygon(10% 0%, 11.2% 0, 1.2% 100%, 0% 100%);
   background-image: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(161, 79, 3, 0.7) 99.94%);
   width: 100%;
   height: 100%;
@@ -220,7 +220,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .btn_bottom-to-top {
