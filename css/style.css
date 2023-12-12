@@ -245,6 +245,18 @@ body {
   z-index: 1;
   transition: 0.7s;
 }
+.btn_left-to-right_sqrl:link, .btn_left-to-right_sqrl:visited {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.btn_left-to-right_sqrl::after {
+  -webkit-clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%);
+}
+.btn_left-to-right_sqrl:hover::after {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
 
 .btn_bottom-to-top {
   position: relative;

@@ -67,6 +67,14 @@
         left: 0
         z-index: 1
         transition: .7s
+    &_sqrl
+        &:link, &:visited
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
+        &::after
+            clip-path: polygon(0% 0%, 1% 0%, 1% 100%, 0% 100%)
+        &:hover
+            &::after
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)
 
 .btn_bottom-to-top
     position: relative
