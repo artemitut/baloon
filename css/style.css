@@ -644,6 +644,9 @@ body {
   .section-tour .text-align-center {
     display: none;
   }
+  .section-tour .tour-card__text ul li {
+    border-bottom: 0px solid black;
+  }
 }
 @media (max-width: 450px) {
   html {
@@ -658,5 +661,10 @@ body {
   .btn_bottom-to-top_sqrl {
     width: 104%;
     text-align: center;
+  }
+}
+@media (max-width: 385px) {
+  html {
+    font-size: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
