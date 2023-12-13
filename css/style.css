@@ -619,6 +619,29 @@ body {
     width: 100%;
   }
   .section-tour {
+    height: 90rem;
+    padding: 20rem 0rem;
+  }
+  .section-tour .row {
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .section-tour .col-1-of-3 {
+    margin: 0px auto;
+    display: block;
+  }
+  .section-tour div {
+    display: block;
+  }
+  .section-tour .btn {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+  }
+  .section-tour .text-align-center {
     display: none;
   }
 }

@@ -36,17 +36,26 @@
     .travel-card
         width: 100%
     .section-tour
-        // height: 130rem
-        // padding: 20rem 0rem 
-        // & .row
-        //     position: relative
-        //     transform: translate(0rem 10rem)
-        //     display: block
-        // & div
-        //     position: relative
-        //     display: block
-        display: none
-
+        height: 90rem
+        padding: 20rem 0rem 
+        & .row
+            width:100%
+            display: flex
+            position: relative
+            align-items: center
+        & .col-1-of-3
+            margin: 0px auto
+            display: block
+        & div
+            display: block
+        // display: none
+        & .btn
+            width: 100%
+            font-size: 1.3rem
+            text-align: center
+            align-items: center
+        & .text-align-center
+            display: none
 @media (max-width: 450px) 
     html 
         font-size: 6px
