@@ -1,0 +1,64 @@
+@media (max-width: 900px) 
+    html 
+        font-size: 8px
+  
+
+@media (max-width: 700px) 
+    html 
+        font-size: 6px
+    [class^="col-"]
+        display:flex
+        width: 80%
+        &:not(:last-child)
+            margin-right: 0px
+            margin-bottom: 10px
+    .row
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    .composition
+        display: none
+    .section-about
+        justify-content: center
+        position: relative
+        height: 100rem
+        margin-bottom: 0px
+        & .col-1-of-2
+            text-align: center
+            width: 100%
+    .section-travel
+        justify-content: center
+        position: relative
+        height: 130rem
+        & .col-1-of-4
+            width: 100%
+    .travel-card
+        width: 100%
+    .section-tour
+        // height: 130rem
+        // padding: 20rem 0rem 
+        // & .row
+        //     position: relative
+        //     transform: translate(0rem 10rem)
+        //     display: block
+        // & div
+        //     position: relative
+        //     display: block
+        display: none
+
+@media (max-width: 450px) 
+    html 
+        font-size: 6px
+  
+    body 
+        padding: 0
+  
+    .section-about 
+        padding: 5rem
+  
+    .btn_bottom-to-top_sqrl 
+        width: 104%
+        text-align: center
+    
+

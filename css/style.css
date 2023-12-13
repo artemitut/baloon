@@ -159,6 +159,10 @@ body {
   margin-bottom: 8rem;
 }
 
+.color-white {
+  color: #ffffff;
+}
+
 .btn {
   position: relative;
   text-transform: uppercase;
@@ -565,4 +569,71 @@ body {
 .section-tour {
   padding-top: 6rem;
   height: 100%;
+  margin-bottom: 8.5rem;
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 6px;
+  }
+  [class^=col-] {
+    width: 80%;
+  }
+  [class^=col-]:not(:last-child) {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .composition {
+    display: none;
+  }
+  .section-about {
+    justify-content: center;
+    position: relative;
+    height: 100rem;
+    margin-bottom: 0px;
+  }
+  .section-about .col-1-of-2 {
+    text-align: center;
+    width: 100%;
+  }
+  .section-travel {
+    justify-content: center;
+    position: relative;
+    height: 130rem;
+  }
+  .section-travel .col-1-of-4 {
+    width: 100%;
+  }
+  .travel-card {
+    width: 100%;
+  }
+  .section-tour {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 6px;
+  }
+  body {
+    padding: 0;
+  }
+  .section-about {
+    padding: 5rem;
+  }
+  .btn_bottom-to-top_sqrl {
+    width: 104%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
