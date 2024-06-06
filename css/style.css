@@ -715,6 +715,9 @@ body {
   .section-tour .tour-card__text ul li {
     border-bottom: 0px solid black;
   }
+  .section-feedback {
+    display: none;
+  }
 }
 @media (max-width: 450px) {
   html {
