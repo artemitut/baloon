@@ -1,3 +1,6 @@
+.cards
+    display: flex
+    flex-wrap: wrap
 .tour-card
     height: 50rem
     transition: 1s
@@ -5,6 +8,11 @@
     -moz-perspective: 150rem
     position: relative
     color: $color-white
+    text-align: center
+    &__btn
+        width: 100%
+        text-align: center
+        font-size: 70%
     &__side
         height: 50rem
         transition: .9s all
